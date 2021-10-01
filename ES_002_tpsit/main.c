@@ -22,15 +22,38 @@ typedef struct{
 
 float media(voti studente[]){
     int k;
-    float medIta, medMate, medInfo;
-    float somIta = 0;
-    float somMate = 0;
-    float somInfo = 0;
+    float mediaIta;
+    float mediaMate;
+    float mediaInfo;
+    float somma = 0;
 
     for(k = 0; k < DIM; k++){
-        somIta = somIta + studente[k].ita;
-        somMate = somMate + studente[k].mate;
-        somInfo = somInfo + studente[k].info;
+        somma = somma + studente[k].ita;
+    }
+    mediaIta = somma / DIM;
+    somma = 0;
+
+    for(k = 0; k < DIM; k++){
+        somma = somma + studente[k].mate;
+    }
+    mediaMate = somma / DIM;
+    somma = 0;
+
+    for(k = 0; k < DIM; k++){
+        somma = somma + studente[k].info;
+    }
+    mediaInfo = somma / DIM;
+
+    if(mediaIta > mediaMate && mediaIta > mediaInfo){
+        printf("Italiano e' la disciplina con la media piu' alta \n");
+    }
+
+    if(mediaMate > mediaIta && mediaMate > mediaInfo){
+        printf("Matematica e' la disciplina con la media piu' alta \n");
+    }
+
+    if(mediaInfo > mediaMate && mediaInfo > mediaIta){
+        printf("Informatica e' la disciplina con la media piu' alta \n");
     }
 }
 
@@ -51,14 +74,8 @@ int main()
        scanf("%d", &studente[k].mate);
        printf("inserisci un voto di informatica: ");
        scanf("%d", &studente[k].info);
-
-    med = media(studente);
-    printf("%f", somIta);
-
     }
-    for(k=0; k<DIM; k++){
-        //printf("nome: %s, cognome: %s, media maggiore: %d \n", classe[k].nome, classe[k].cognome, classe[k].matricola);
-    }
+    media(studente);
 
     return 0;
 }
