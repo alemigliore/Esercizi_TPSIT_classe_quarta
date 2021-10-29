@@ -4,6 +4,13 @@
 #define L1 20
 #define L2 40
 
+/*
+Si scriva un programma che chieda all’utente 2 stringhe e concateni la
+seconda alla fine della prima, NON si usi la funzione strcat della libreria
+standard, si usino i puntatori e non la notazione vettoriale. Attenzione a
+terminarla con il carattere ‘\0’.
+*/
+
 void cat(char * s1, char *s2)
 {
     int n1=strlen(s1);
