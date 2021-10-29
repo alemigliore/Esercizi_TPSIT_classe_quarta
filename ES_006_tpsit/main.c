@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#define LUNG_MAX 20
+#define LUNG 20
 
 bool palindroma(char stringa[]){
     bool ok = true;
@@ -24,7 +24,7 @@ bool palindroma(char stringa[]){
 
 int main()
 {
-    char stringa[LUNG_MAX];
+    char * stringa=(char *)malloc(LUNG *sizeof(char));
 
     printf("Inserisci una stringa: ");
     gets(stringa);
