@@ -43,10 +43,11 @@ void inverti(int v[], int n){
 
 int main()
 {
-    int v[DIM];
     int n;
 
-    srand(time(NULL));
+    printf("Quanti numeri vuole inserire? ");
+    scanf("%d", &n);
+    int *v=(int*)malloc(n*sizeof(int));;
 
     do{
         printf("Inserisci il numero di valori del vettore: ");

@@ -10,11 +10,11 @@ Scrivere un programma che data una stringa in input dica se la stessa contiene a
 una ‘A’ tra i primi 10 caratteri.
 */
 
-bool controlla(char s[], int n){
+bool controlla(char s[]){
     int k = 0;
     bool ok = false;
 
-    while(k < n && ok == false){
+    while(k < LUNG && ok == false){
         if(s[k] == 'A' || s[k] == 'a'){
             ok = true;
         }else{
@@ -26,13 +26,12 @@ bool controlla(char s[], int n){
 
 int main()
 {
-    char s[LUNG];
-    int n = 10;
+    char * s=(char *)malloc(LUNG *sizeof(char));
 
     printf("Inserisci una stringa: ");
     scanf("%s", s);
 
-    if(controlla(s, n)){
+    if(controlla(s)){
         printf("\nLa stringa contiene il carattere 'A' o 'a'\n");
     }else{
         printf("\nLa stringa non contiene il carattere 'A' o 'a'\n");
