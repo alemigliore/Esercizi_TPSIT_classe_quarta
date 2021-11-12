@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1636704602 source:c:\users\client\documents\scuola\tpsit\c\es_012_tpsit\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
