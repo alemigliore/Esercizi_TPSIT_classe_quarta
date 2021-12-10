@@ -42,13 +42,14 @@ void insNum(float **mat, int nr, int nc){
     printf("\nInserisci il numero da inserire: ");
     scanf("%f", &num);
 
-    mat[x][y] = num;
+    mat[x - 1][y - 1] = num;
 
     return;
 }
 
 void malloc2d(int nr, int nc){
-    char s[LUNG];
+
+    char *s = (char*) malloc(LUNG*sizeof(char));
 
     float **mat;
     mat = (float *) calloc(nr, sizeof(float));

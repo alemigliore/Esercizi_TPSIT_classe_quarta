@@ -15,7 +15,7 @@ bool controlla(char s[]){
     bool ok = false;
 
     while(k < LUNG && ok == false){
-        if(s[k] == 'A' || s[k] == 'a'){
+        if(*(s + k) == 'A' || *(s + k) == 'a'){
             ok = true;
         }else{
             k++;

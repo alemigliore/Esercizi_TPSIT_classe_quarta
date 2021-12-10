@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1633612705 source:c:\users\client\documents\scuola\tpsit\c\es_003_tpsit\main.c
+1633677542 source:c:\users\client\documents\scuola\tpsit\c\es_003_tpsit\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 
