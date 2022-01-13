@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1642015184 source:c:\users\client\documents\scuola\tpsit\c\es_001_compitivacanze\main.c
+	<stdio.h>
+	<stdlib.h>
+
