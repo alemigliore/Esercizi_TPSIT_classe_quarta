@@ -4,6 +4,7 @@ struct elem {
     char *nome;
     struct elem *next;
 };
+
 struct elem **list2vet(struct elem *p) {
     int i, n = 0;
     struct elem *app, **v;
@@ -21,6 +22,7 @@ struct elem **list2vet(struct elem *p) {
         return v;
     } else return NULL; /* lista vuota */
 }
+
 struct elem *crealista(int k) { /* funzione di appoggio, non richiesta */
     /* crea una lista di k record */
     int i;
@@ -44,6 +46,7 @@ struct elem *crealista(int k) { /* funzione di appoggio, non richiesta */
         return l;
     }
 }
+
 main () { /* programma principale di test, non richiesto dal compito */
     struct elem *p1, **v;
     int i;
