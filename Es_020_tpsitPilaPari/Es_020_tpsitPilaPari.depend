@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1646984231 source:c:\users\client\documents\scuola\tpsit\c\es_020_tpsitpilapari\main.c
+	<stdio.h>
+	<stdlib.h>
+
